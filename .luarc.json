@@ -1,0 +1,12 @@
+{
+  "workspace": {
+    "library": [
+      "love"
+    ]
+  },
+  "diagnostics": {
+    "globals": [
+      "love"
+    ]
+  }
+}

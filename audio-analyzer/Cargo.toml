@@ -1,0 +1,9 @@
+[package]
+name = "audio-analyzer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.51", features = ["derive"] }
+rustfft = "6.4.1"
+symphonia = { version = "0.5.5", features = ["mp3", "wav", "aac"] }

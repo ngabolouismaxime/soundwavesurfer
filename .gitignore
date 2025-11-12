@@ -1,0 +1,34 @@
+# LÖVE build files
+*.love
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+
+# Love2D docs
+LOVE2D_DOCS.md
+
+# Rust build artifacts
+audio-analyzer/target/
+audio-analyzer/Cargo.lock
+
+# Generated audio analysis files
+assets/*.beats.txt
+assets/*.wave.dat
+
+# Audio files (too large for git)
+assets/*.mp3
+assets/*.wav
+assets/*.ogg
